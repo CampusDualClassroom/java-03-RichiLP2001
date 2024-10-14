@@ -21,12 +21,13 @@ public class Exercise03 {
     // Si es correcto, que muestre el mensaje de la función greetings() y si no que muestre el mensaje de la función error()
     public static void checkUser(String user, String pass) {
 
-
-        if (user == "Sebas" && pass == "sebas01"){
+        String validUser = "Sebas";
+        String validPass = "sebas01";
+        if (user == validUser && pass == validPass){
         System.out.println(greetings(user));
         }
         else {
-            System.out.println(error(pass));
+            System.out.println(error(validUser));
         }
 
     }
@@ -34,9 +35,9 @@ public class Exercise03 {
 
 
     public static void main(String[] args) {
-        String user = "Sebas" ;
-        String pass = "sebas01";
-        checkUser(user,pass);
+        //String user = "Sebas";
+        //String pass = "sebas02";
+        //checkUser(user,pass);
 
     }
 }
